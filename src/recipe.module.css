@@ -1,0 +1,56 @@
+.recipe {
+  border-radius: 10px;
+  box-shadow: 0px 5px 20px rgb(71, 71, 71);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  min-width: 40%;
+  padding: 20px 40px;
+  color: #444;
+}
+
+.recipe h1 {
+  margin: 10px 0;
+  color: #a18cd1;
+}
+
+.recipe ol h3 {
+  margin: 10px 0;
+  color: tomato;
+}
+.recipe ol li {
+  margin: 10px 0;
+}
+.recipe ol li:nth-child(even)::marker {
+  color: #a18cd1;
+  font-weight: bold;
+}
+.recipe ol li:nth-child(odd)::marker {
+  font-weight: bold;
+  color: #fbc2eb;
+}
+
+.recipe p {
+  color: lightcoral;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.recipe p span {
+  color: #444;
+  font-weight: normal;
+}
+.recipe figure {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.recipe figure img {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+.recipe figure img:hover {
+  transform: scale(1.2);
+}
