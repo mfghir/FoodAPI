@@ -10,7 +10,7 @@ const Recipe = ({ title, calories, image, ingredients }) => {
           <li>{ingredient.text}</li>
         ))}
       </ol>
-      <p>Calories : <span>{calories}</span></p>
+      <p>Calories : <span>{calories.toFixed(2) }</span></p>
       <figure><img src={image} alt="food" /></figure>
     </section>
   );
